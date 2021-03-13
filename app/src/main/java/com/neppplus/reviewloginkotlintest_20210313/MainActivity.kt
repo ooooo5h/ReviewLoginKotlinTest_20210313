@@ -19,8 +19,16 @@ class MainActivity : AppCompatActivity() {
             val inputPw = pwEdt.text.toString()
 
 //        2. 두 변수를 갖고 조건문 활용
+//            => id : admin, pw : qwer 두개 다 맞아야 로그인 성공
 
+            if ( inputId == "admin" && inputPw == "qwer" ){
+//                3. 관리자입니다 하고 토스트를 띄우기.
+                Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
+                }
 
+            else {
+                Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show()
+            }
         }
 
 
